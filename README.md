@@ -44,3 +44,14 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Questions for Office Hours
+1. Should I include the tab bar in the Settings screens? If so, what would be a good way to do this? I could just put links side-by-side, but is there a more structured way of doing it?
+
+## TODO
+1. Incorporate the index.html from CourseDetails and Settings/Navigation into screen.html files.
+2. Make sure no links with empty hrefs
+3. Make sure all the links work in general
+4. Make sure no empty quotes in general - just delete the properties
+5. See if floating text can be put inside HTML elements with an appropriate attribute
+6. Confirm everything looks right on Netlify (both branches look how they should)
