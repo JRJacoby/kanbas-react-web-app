@@ -13,6 +13,11 @@
   text-align: center;
 }
 
+.wd-kanbas-navigation li a {
+  display: flex;
+  flex-direction: column; 
+}
+
 .wd-kanbas-navigation li.wd-active {
   background-color: white;
 }
