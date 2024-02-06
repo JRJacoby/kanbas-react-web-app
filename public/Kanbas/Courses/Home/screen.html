@@ -3,19 +3,15 @@
 <head>
     <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/4dd0faad47.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/Kanbas/styles.css" />
     <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
     <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
     <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css">
 </head>
 
 <body>
-    <button>Collapse All</button>
-    <button>View Progress</button>
-    <select>
-        <option>Publish All</option>
-    </select>
-    <button>Module</button>
     <div class="d-flex">
         <div class="d-none d-md-block">
             <ul class="wd-kanbas-navigation">
@@ -24,9 +20,9 @@
                 <li><a href="/Kanbas/Account/Profile/screen.html"><i
                             class="fa-solid fa-user jj-account-icon"></i>Account</a>
                 </li>
-                <li class="wd-active"><a href="/Kanbas/Dashboard/screen.html"><i
-                            class="fa fa-tachometer"></i>Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html"><i class="fa-solid fa-book"></i>Courses</a></li>
+                <li><a href="/Kanbas/Dashboard/screen.html"><i class="fa fa-tachometer"></i>Dashboard</a></li>
+                <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i
+                            class="fa-solid fa-book"></i>Courses</a></li>
                 <li><a href="/Kanbas/Calendar/index.html"><i class="fa fa-calendar"></i>Calendar</a></li>
                 <li><a href="/Kanbas/Inbox/index.html"><i class="fa-solid fa-inbox"></i>Inbox</a></li>
                 <li><a href="/Kanbas/History/index.html"><i class="fa-regular fa-clock"></i>History</a></li>
@@ -58,253 +54,311 @@
             </ul>
         </div>
         <div class="flex-fill">
-            <ul class="list-group wd-modules">
-                <!-- Implement buttons Collapse All, View Progress, etc. here -->
+            <div class="jj-home-main-content">
+                <div class="jj-home-header-buttons">
+                    <button class="jj-grey-btn">Collapse All</button>
+                    <button class="jj-grey-btn">View Progress</button>
+                    <select class="jj-grey-btn">
+                        <option><i class="fa-solid fa-check"></i>Publish All</option>
+                    </select>
+                    <button class="jj-red-btn">+ Module</button>
+                    <hr>
+                </div>
+                <hr>
                 <ul class="list-group wd-modules">
-                    <li class="list-group-item">
-                        <div>
-                            <i class="fa fa-ellipsis-v"></i> Week 0 - INTRO
-                            <span class="float-end">
-                                <i class="fa fa-check-circle text-success"></i>
-                                <i class="fa fa-plus ms-2"></i>
-                                <i class="fa fa-ellipsis-v ms-2"></i>
-                            </span>
-                        </div>
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                <i class="fa fa-ellipsis-v"></i> LEARNING OBJECTIVES
+                    <ul class="list-group wd-modules">
+                        <li class="list-group-item">
+                            <div>
+                                <i class="fa fa-ellipsis-v"></i> Week 0 - INTRO
                                 <span class="float-end">
                                     <i class="fa fa-check-circle text-success"></i>
+                                    <i class="fa fa-plus ms-2"></i>
                                     <i class="fa fa-ellipsis-v ms-2"></i>
                                 </span>
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Introduction to the
-                                            course</span>
-                                        <span class="float-end">
-                                            <i class="fa fa-check-circle text-success"></i>
-                                            <i class="fa fa-ellipsis-v ms-2"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Learn what is Web
-                                            Development</span>
-                                        <span class="float-end">
-                                            <i class="fa fa-check-circle text-success"></i>
-                                            <i class="fa fa-ellipsis-v ms-2"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Creating a
-                                            development environment</span>
-                                        <span class="float-end">
-                                            <i class="fa fa-check-circle text-success"></i>
-                                            <i class="fa fa-ellipsis-v ms-2"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Creating a Web
-                                            Application</span>
-                                        <span class="float-end">
-                                            <i class="fa fa-check-circle text-success"></i>
-                                            <i class="fa fa-ellipsis-v ms-2"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Getting started with
-                                            the 1st assignment</span>
-                                        <span class="float-end">
-                                            <i class="fa fa-check-circle text-success"></i>
-                                            <i class="fa fa-ellipsis-v ms-2"></i>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="list-group-item">
-                                <i class="fa fa-ellipsis-v"></i> READING
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <i class="fa fa-ellipsis-v"></i> LEARNING OBJECTIVES
+                                    <span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <i class="fa fa-ellipsis-v ms-2"></i>
+                                    </span>
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Introduction to
+                                                the
+                                                course</span>
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Learn what is
+                                                Web
+                                                Development</span>
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Creating a
+                                                development environment</span>
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Creating a Web
+                                                Application</span>
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Getting started
+                                                with
+                                                the 1st assignment</span>
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-ellipsis-v"></i> READING
+                                    <span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <i class="fa fa-ellipsis-v ms-2"></i>
+                                    </span>
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Full Stack
+                                                Developer
+                                                - Chapter 1 - Introduction </span>
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Full Stack
+                                                Developer
+                                                - Chapter 2 - Creating User Interfaces with HTML</span>
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-ellipsis-v"></i> SLIDES
+                                    <span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <i class="fa fa-ellipsis-v ms-2"></i>
+                                    </span>
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Introduction to
+                                                Web
+                                                Development</span>
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Creating an HTTP
+                                                server with Node.js</span>
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Creating a React
+                                                Application</span>
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item">
+                            <div>
+                                <i class="fa fa-ellipsis-v"></i> Week 1 - HTML
                                 <span class="float-end">
                                     <i class="fa fa-check-circle text-success"></i>
+                                    <i class="fa fa-plus ms-2"></i>
                                     <i class="fa fa-ellipsis-v ms-2"></i>
                                 </span>
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Full Stack Developer
-                                            - Chapter 1 - Introduction </span>
-                                        <span class="float-end">
-                                            <i class="fa fa-check-circle text-success"></i>
-                                            <i class="fa fa-ellipsis-v ms-2"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Full Stack Developer
-                                            - Chapter 2 - Creating User Interfaces with HTML</span>
-                                        <span class="float-end">
-                                            <i class="fa fa-check-circle text-success"></i>
-                                            <i class="fa fa-ellipsis-v ms-2"></i>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="list-group-item">
-                                <i class="fa fa-ellipsis-v"></i> SLIDES
-                                <span class="float-end">
-                                    <i class="fa fa-check-circle text-success"></i>
-                                    <i class="fa fa-ellipsis-v ms-2"></i>
-                                </span>
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Introduction to Web
-                                            Development</span>
-                                        <span class="float-end">
-                                            <i class="fa fa-check-circle text-success"></i>
-                                            <i class="fa fa-ellipsis-v ms-2"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Creating an HTTP
-                                            server with Node.js</span>
-                                        <span class="float-end">
-                                            <i class="fa fa-check-circle text-success"></i>
-                                            <i class="fa fa-ellipsis-v ms-2"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Creating a React
-                                            Application</span>
-                                        <span class="float-end">
-                                            <i class="fa fa-check-circle text-success"></i>
-                                            <i class="fa fa-ellipsis-v ms-2"></i>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="list-group-item">
-                        <div>
-                            <i class="fa fa-ellipsis-v"></i> Week 1 - HTML
-                            <span class="float-end">
-                                <i class="fa fa-check-circle text-success"></i>
-                                <i class="fa fa-plus ms-2"></i>
-                                <i class="fa fa-ellipsis-v ms-2"></i>
-                            </span>
-                        </div>
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                <i class="fa fa-ellipsis-v"></i> LEARNING OBJECTIVES
-                                <span class="float-end">
-                                    <i class="fa fa-check-circle text-success"></i>
-                                    <i class="fa fa-ellipsis-v ms-2"></i>
-                                </span>
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Learn how to create
-                                            user interfaces with HTML</span>
-                                        <span class="float-end">
-                                            <i class="fa fa-check-circle text-success"></i>
-                                            <i class="fa fa-ellipsis-v ms-2"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Keep working on
-                                            assignment 1</span>
-                                        <span class="float-end">
-                                            <i class="fa fa-check-circle text-success"></i>
-                                            <i class="fa fa-ellipsis-v ms-2"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Deploy the
-                                            assignment to Netlify</span>
-                                        <span class="float-end">
-                                            <i class="fa fa-check-circle text-success"></i>
-                                            <i class="fa fa-ellipsis-v ms-2"></i>
-                                        </span>
-                                </ul>
-                            </li>
-                            <li class="list-group-item">
-                                <i class="fa fa-ellipsis-v"></i> READING
-                                <span class="float-end">
-                                    <i class="fa fa-check-circle text-success"></i>
-                                    <i class="fa fa-ellipsis-v ms-2"></i>
-                                </span>
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Full Stack Developer
-                                            - Chapter 1 - Introduction </span>
-                                        <span class="float-end">
-                                            <i class="fa fa-check-circle text-success"></i>
-                                            <i class="fa fa-ellipsis-v ms-2"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Full Stack Developer
-                                            - Chapter 2 - Creating User Interfaces with HTML</span>
-                                        <span class="float-end">
-                                            <i class="fa fa-check-circle text-success"></i>
-                                            <i class="fa fa-ellipsis-v ms-2"></i>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="list-group-item">
-                                <i class="fa fa-ellipsis-v"></i> SLIDES
-                                <span class="float-end">
-                                    <i class="fa fa-check-circle text-success"></i>
-                                    <i class="fa fa-ellipsis-v ms-2"></i>
-                                </span>
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Introduction to Web
-                                            Development</span>
-                                        <span class="float-end">
-                                            <i class="fa fa-check-circle text-success"></i>
-                                            <i class="fa fa-ellipsis-v ms-2"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Creating an HTTP
-                                            server with Node.js</span>
-                                        <span class="float-end">
-                                            <i class="fa fa-check-circle text-success"></i>
-                                            <i class="fa fa-ellipsis-v ms-2"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Creating a React
-                                            Application</span>
-                                        <span class="float-end">
-                                            <i class="fa fa-check-circle text-success"></i>
-                                            <i class="fa fa-ellipsis-v ms-2"></i>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <i class="fa fa-ellipsis-v"></i> LEARNING OBJECTIVES
+                                    <span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <i class="fa fa-ellipsis-v ms-2"></i>
+                                    </span>
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Learn how to
+                                                create
+                                                user interfaces with HTML</span>
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Keep working on
+                                                assignment 1</span>
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Deploy the
+                                                assignment to Netlify</span>
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                    </ul>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-ellipsis-v"></i> READING
+                                    <span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <i class="fa fa-ellipsis-v ms-2"></i>
+                                    </span>
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Full Stack
+                                                Developer
+                                                - Chapter 1 - Introduction </span>
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Full Stack
+                                                Developer
+                                                - Chapter 2 - Creating User Interfaces with HTML</span>
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-ellipsis-v"></i> SLIDES
+                                    <span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <i class="fa fa-ellipsis-v ms-2"></i>
+                                    </span>
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Introduction to
+                                                Web
+                                                Development</span>
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Creating an HTTP
+                                                server with Node.js</span>
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-ellipsis-v"></i> <span class="jj-list-item">Creating a React
+                                                Application</span>
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </ul>
-            </ul>
+            </div>
         </div>
-        <div class="flex-grow-0 me-2 d-none d-lg-block" style="width: 250px">
-            <h3>Course Status</h3>
-            <h2>Course Status</h2>
-            <button>Unpublish</button>
-            <button>Published</button>
+        <div class="flex-grow-0 me-2 d-none d-lg-block jj-courses-home-sidebar" style="width: 250px">
+            <b>Course Status</b>
             <ul>
-                <li>Import Existing Content</li>
-                <li>Import From Commons</li>
-                <li>Choose Home Page</li>
-                <li>View Course Stream</li>
-                <li>New Announcement</li>
-                <li>New Analytics</li>
-                <li>View Course Notifications</li>
+                <li>
+                    <div class="jj-publish-options">
+                        <button class="jj-grey-btn" width="50%"><i class="fa-solid fa-ban"></i> Unpublish</button>
+                        <button class="jj-green-btn" width="50%"><i class="fa-solid fa-circle-check"></i>
+                            Published</button>
+                    </div>
+                </li>
+                <li><button class="jj-wide-grey-btn"><i class="fa-solid fa-file-import"></i> Import Existing
+                        Content</button></li>
+                <li><button class="jj-wide-grey-btn"><i class="fa-solid fa-arrows-turn-right"></i> Import From
+                        Commons</button></li>
+                <li><button class="jj-wide-grey-btn"><i class="fa-solid fa-bullseye"></i> Choose Home Page</button></li>
+                <li><button class="jj-wide-grey-btn"><i class="fa-solid fa-chart-column"></i> View Course
+                        Stream</button></li>
+                <li><button class="jj-wide-grey-btn"><i class="fa-solid fa-bullhorn"></i> New Announcement</button></li>
+                <li><button class="jj-wide-grey-btn"><i class="fa-solid fa-chart-column"></i> New Analytics</button>
+                </li>
+                <li><button class="jj-wide-grey-btn"><i class="fa-regular fa-bell"></i> View Course
+                        Notifications</button></li>
             </ul>
 
-            <h2>Coming Up</h2>
+            <b>Coming Up</b>
+            <hr>
             <ul>
-                <li><a href="#">Lecture CS4550.12631.202410 Sep 7 at 11:45am</a></li>
-                <li><a href="#">Lecture CS4550.12631.202410 Sep 11 at 11:45am</a></li>
-                <li><a href="#">CS5610 06 SP23 Lecture Sep 11 at 6pm</a></li>
+                <li>
+                    <div class="jj-coming-up-list-item">
+                        <i class="fa-solid fa-calendar"></i>
+                        <div>
+                            <a href="#">Lecture</a>
+                            <p>CS4550.12631.202410</br>
+                            Sep 7 at 11:45am</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="jj-coming-up-list-item">
+                        <i class="fa-solid fa-calendar"></i>
+                        <div>
+                            <a href="#">CS5610 Lecture</a>
+                            <p>CS5610.12631.202410</br>
+                            Sep 11 at 6pm</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="jj-coming-up-list-item">
+                        <i class="fa-solid fa-calendar"></i>
+                        <div>
+                            <a href="#">CS1234 Sp 23 Lecture</a>
+                            <p>CS1234.12731.202410</br>
+                            Sep 7 at 11:45am</p>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>

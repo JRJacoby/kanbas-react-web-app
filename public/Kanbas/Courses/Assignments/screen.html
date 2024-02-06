@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
     <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css">
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
     <script src="https://kit.fontawesome.com/4dd0faad47.js" crossorigin="anonymous"></script>
 </head>
 
@@ -20,9 +21,9 @@
                 <li><a href="/Kanbas/Account/Profile/screen.html"><i
                             class="fa-solid fa-user jj-account-icon"></i>Account</a>
                 </li>
-                <li><a href="/Kanbas/Dashboard/screen.html"><i
-                            class="fa fa-tachometer"></i>Dashboard</a></li>
-                <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i class="fa-solid fa-book"></i>Courses</a></li>
+                <li><a href="/Kanbas/Dashboard/screen.html"><i class="fa fa-tachometer"></i>Dashboard</a></li>
+                <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i
+                            class="fa-solid fa-book"></i>Courses</a></li>
                 <li><a href="/Kanbas/Calendar/index.html"><i class="fa fa-calendar"></i>Calendar</a></li>
                 <li><a href="/Kanbas/Inbox/index.html"><i class="fa-solid fa-inbox"></i>Inbox</a></li>
                 <li><a href="/Kanbas/History/index.html"><i class="fa-regular fa-clock"></i>History</a></li>
@@ -54,12 +55,14 @@
             </ul>
         </div>
         <div>
-            <input placeholder="Search for Assignments">
-            <button>Group</button>
-            <button>Assignment</button>
-            <select>
-                <option>Edit Assignment Dates</option>
-            </select>
+            <input placeholder="Search for Assignments" class="form-control w-25">
+            <span class="float-end">
+                <button>Group</button>
+                <button>Assignment</button>
+                <select>
+                    <option>Edit Assignment Dates</option>
+                </select>
+            </span>
             <h2>ASSIGNMENTS 40% of Total</h2>
             <select>
                 <option>Edit</option>
@@ -71,36 +74,6 @@
                 <option>Copy To...</option>
                 <option>Share to Commons</option>
             </select>
-            <ul>
-                <li>
-                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A1 - ENV + HTML</a><br><a href="#">Multiple
-                        Modules</a> | Not available yet
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A2 - CSS + BOOTSTRAP</a><br><a
-                        href="#">Multiple
-                        Modules</a> | Not available yet
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A3 - JS + REACT</a><br><a href="#">Multiple
-                        Modules</a> | Not available yet
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A4 - STATE + REDUX</a><br><a
-                        href="#">Multiple
-                        Modules</a> | Not available yet
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A5 - NODE + SESSION</a><br><a
-                        href="#">Multiple
-                        Modules</a> | Not available yet
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A6 - MONGO + MONGOOSE</a><br><a
-                        href="#">Multiple
-                        Modules</a> | Not available yet
-                </li>
-            </ul>
             <h2>QUIZZES 10% of Total</h2>
             <select>
                 <option>Edit</option>
@@ -112,6 +85,11 @@
                 <option>Copy To...</option>
                 <option>Share to Commons</option>
             </select>
+            <ul class="list-group"> Assignments
+                <li class="list-group-item">
+
+                </li>
+            </ul>
             <ul>
                 <li>
                     <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Q1 - HTML</a><br><a href="#">Multiple

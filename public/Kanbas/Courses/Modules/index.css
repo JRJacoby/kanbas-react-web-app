@@ -21,6 +21,10 @@
     border-left: 1px solid gray !important;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .wd-modules>li>ul>li {
     padding: 5px;
     border-top: 1px solid gray !important;
@@ -34,4 +38,90 @@
 .jj-list-item {
     padding-left: 30px;
     /*text-indent: 30px;*/
+}
+
+.jj-home-main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.jj-home-header-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.jj-wide-grey-btn {
+    margin: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(73, 73, 73);
+    background-color: lightgray;
+    width: 100%;
+    text-align: left;
+}
+
+.jj-grey-btn {
+    margin: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(73, 73, 73);
+    background-color: lightgray;
+}
+
+.jj-red-btn {
+    margin: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+}
+
+.jj-green-btn {
+    margin: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(29, 133, 47);
+}
+
+.jj-publish-options {
+    display: flex;
+    flex-direction: row;
+}
+
+.jj-publish-options > button {
+    flex: 1;
+}
+
+.jj-coming-up-list-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.jj-coming-up-list-item p {
+    color: darkgray;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.jj-coming-up-list-item i {
+    padding-right: 10px;
+}
+
+.jj-courses-home-sidebar {
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.jj-courses-home-sidebar > ul {
+    margin-left: 0;
+    padding-left: 0;
 }
