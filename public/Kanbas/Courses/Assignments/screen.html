@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0">
     <link rel="stylesheet" href="/Kanbas/styles.css" />
     <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
     <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
@@ -34,9 +34,18 @@
             </ul>
         </div>
         <div class="jj-assignments-course-nav-main-content-breadcrumbs">
-            <div class="jj-assignments-breadcrumbs-bar">
-                Hello breadcrumbs here.
+            <div class="jj-assignments-breadcrumbs-bar align-items-center">
+                <i class="fa-solid fa-bars fa-lg"></i>
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/Kanbas/Courses/Home/screen.html">CS5610.11744.202310</a>
+                        </li>
+                        <li class="breadcrumb-item active">Assignments</li>
+                    </ol>
+                </nav>
+                <button class="float-end jj-grey-btn ms-auto"><i class="fa-solid fa-glasses"></i> Student View</button>
             </div>
+            <hr>
             <div class="jj-assignments-course-nav-main-content">
                 <div>
                     <ul class="wd-navigation">
@@ -61,34 +70,15 @@
                     </ul>
                 </div>
                 <div class="jj-assignments-main-content">
-                    <input placeholder="Search for Assignments" class="form-control w-25">
-                    <span class="float-end">
-                        <button>Group</button>
-                        <button>Assignment</button>
-                        <select>
-                            <option>Edit Assignment Dates</option>
-                        </select>
-                    </span>
-                    <!--select>
-                <option>Edit</option>
-                <option>Speed Grader</option>
-                <option>Duplicate</option>
-                <option>Delete</option>
-                <option>Move To...</option>
-                <option>Send To...</option>
-                <option>Copy To...</option>
-                <option>Share to Commons</option>
-            </select-->
-                    <!--select>
-                <option>Edit</option>
-                <option>Speed Grader</option>
-                <option>Duplicate</option>
-                <option>Delete</option>
-                <option>Move To...</option>
-                <option>Send To...</option>
-                <option>Copy To...</option>
-                <option>Share to Commons</option>
-            </select-->
+                    <div class="d-flex flex-row align-items-center">
+                        <input type="text" placeholder="Search for Assignments" class="form-control w-25 me-auto">
+                        <div class="float-end">
+                            <button class="jj-grey-btn"><i class="fa-solid fa-plus"></i> Groups</button>
+                            <button class="jj-red-btn"><i class="fa-solid fa-plus"></i> Assignment</button>
+                            <button class="jj-grey-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                    </div>
+                    <hr>
                     <ul class="list-group">
                         <li class="list-group-item jj-first-in-list">
                             <i class="fa-solid fa-grip-vertical"></i> <i class="fa-solid fa-caret-down"></i> Assignments
@@ -102,7 +92,7 @@
                             <div class="d-flex align-items-center justify-content-between jj-assignment-list-item">
                                 <div class="flex-shrink-0">
                                     <i class="fa-solid fa-grip-vertical"></i>
-                                    <i class="fa-solid fa-file-pen"></i>
+                                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html"><i class="fa-solid fa-file-pen"></i></a>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
                                     <b>
@@ -121,7 +111,7 @@
                             <div class="d-flex align-items-center justify-content-between jj-assignment-list-item">
                                 <div class="flex-shrink-0">
                                     <i class="fa-solid fa-grip-vertical"></i>
-                                    <i class="fa-solid fa-file-pen"></i>
+                                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html"><i class="fa-solid fa-file-pen"></i></a>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
                                     <b>
@@ -140,7 +130,7 @@
                             <div class="d-flex align-items-center justify-content-between jj-assignment-list-item">
                                 <div class="flex-shrink-0">
                                     <i class="fa-solid fa-grip-vertical"></i>
-                                    <i class="fa-solid fa-file-pen"></i>
+                                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html"><i class="fa-solid fa-file-pen"></i></a>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
                                     <b>
@@ -159,7 +149,7 @@
                             <div class="d-flex align-items-center justify-content-between jj-assignment-list-item">
                                 <div class="flex-shrink-0">
                                     <i class="fa-solid fa-grip-vertical"></i>
-                                    <i class="fa-solid fa-file-pen"></i>
+                                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html"><i class="fa-solid fa-file-pen"></i></a>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
                                     <b>
@@ -179,7 +169,7 @@
                             <div class="d-flex align-items-center justify-content-between jj-assignment-list-item">
                                 <div class="flex-shrink-0">
                                     <i class="fa-solid fa-grip-vertical"></i>
-                                    <i class="fa-solid fa-file-pen"></i>
+                                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html"><i class="fa-solid fa-file-pen"></i></a>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
                                     <b>
@@ -199,7 +189,7 @@
                             <div class="d-flex align-items-center justify-content-between jj-assignment-list-item">
                                 <div class="flex-shrink-0">
                                     <i class="fa-solid fa-grip-vertical"></i>
-                                    <i class="fa-solid fa-file-pen"></i>
+                                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html"><i class="fa-solid fa-file-pen"></i></a>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
                                     <b>
@@ -258,7 +248,8 @@
                                     </b>
                                     <p>Week 4 - JAVASCRIPT Module | <b>Not available until</b> Oct 2 at 11:00am |
                                         <b>Due</b>
-                                        Oct 2 at 5:10pm | 32 pts|</p>
+                                        Oct 2 at 5:10pm | 32 pts|
+                                    </p>
                                 </div>
                                 <div class="flex-shrink-0">
                                     <i class="fa fa-check-circle text-success"></i>
@@ -270,7 +261,7 @@
                             <div class="d-flex align-items-center justify-content-between jj-assignment-list-item">
                                 <div class="flex-shrink-0">
                                     <i class="fa-solid fa-grip-vertical"></i>
-                                    <i class="fa-solid fa-file-pen"></i>
+                                    <i class="fa-solid fa-rocket"></i>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
                                     <b>
@@ -288,16 +279,6 @@
                             </div>
                         </li>
                     </ul>
-                    <!--select>
-                <option>Edit</option>
-                <option>Speed Grader</option>
-                <option>Duplicate</option>
-                <option>Delete</option>
-                <option>Move To...</option>
-                <option>Send To...</option>
-                <option>Copy To...</option>
-                <option>Share to Commons</option>
-            </select-->
                     <ul class="list-group">
                         <li class="list-group-item jj-first-in-list">
                             <i class="fa-solid fa-grip-vertical"></i> <i class="fa-solid fa-caret-down"></i> EXAMS
@@ -344,16 +325,6 @@
                             </div>
                         </li>
                     </ul>
-                    <!--select>
-                <option>Edit</option>
-                <option>Speed Grader</option>
-                <option>Duplicate</option>
-                <option>Delete</option>
-                <option>Move To...</option>
-                <option>Send To...</option>
-                <option>Copy To...</option>
-                <option>Share to Commons</option>
-            </select-->
                     <ul class="list-group">
                         <li class="list-group-item jj-first-in-list">
                             <i class="fa-solid fa-grip-vertical"></i> <i class="fa-solid fa-caret-down"></i> PROJECT
@@ -382,10 +353,10 @@
                             </div>
                         </li>
                     </ul>
+                    </!--input>
                 </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
