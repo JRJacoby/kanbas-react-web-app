@@ -105,3 +105,15 @@ ul {
     margin-left: 0;
     padding-left: 0;
 }
+
+.jj-responsive-menu-bar > * {
+    color: white;
+}
+
+.jj-responsive-menu-bar i {
+    padding: 5px;
+}
+
+.jj-responsive-menu-bar a {
+    color: white;
+}
