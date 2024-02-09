@@ -18,10 +18,10 @@
     margin-left: 10px;
 }
 
-/*.jj-assignments-edit-main-content {
-    flex-grow: 1;
-}*/
-
 .jj-assignment-div {
     border-width: 2px;
+}
+
+.jj-checkbox-container {
+    margin-left: 5px !important;
 }
