@@ -1,0 +1,13 @@
+.jj-card-col {
+    width: 300px;
+}
+
+.card-img-top {
+    max-height: 150px;
+}
+
+.card-title {
+    text-decoration: none;
+    color: navy;
+    font-weight: bold;
+}
