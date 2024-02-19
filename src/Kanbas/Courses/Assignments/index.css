@@ -1,5 +1,7 @@
 .jj-first-in-list {
-    background-color: darkgray;
+    background-color: rgb(245, 245, 245);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .jj-first-in-list > .fa-caret-down {
@@ -30,11 +32,11 @@
 
 .list-group-item {
     border-left-color: green !important;
-    border-left-width: 5px !important;
+    border-left-width: 2px !important;
 }
 
 .jj-first-in-list {
-    border: none !important;
+    border: 1px solid rgb(222, 226, 230) !important;
 }
 
 .jj-assignment-list-item > div > p {
@@ -108,4 +110,9 @@
 
 .breadcrumb-item + .breadcrumb-item::before {
     content: " > ";
+}
+
+.jj-assignments-list-item-wrapper {
+    padding-top: 13px !important;
+    padding-bottom: 13px !important;
 }

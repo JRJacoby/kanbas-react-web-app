@@ -28,7 +28,7 @@ function Assignments() {
                 {
                     assignmentList.map(assignment => {
                         return (
-                            <li className="list-group-item">
+                            <li className="list-group-item jj-assignments-list-item-wrapper">
                                 <div className="d-flex align-items-center justify-content-between jj-assignment-list-item">
                                     <div className="flex-shrink-0">
                                         <i className="fa-solid fa-grip-vertical"></i>

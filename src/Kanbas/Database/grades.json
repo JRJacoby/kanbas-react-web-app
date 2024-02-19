@@ -157,13 +157,7 @@
   },
   {
     "_id": "27",
-    "student": "123",
-    "assignment": "A302",
-    "grade": "96"
-  },
-  {
-    "_id": "28",
-    "student": "124",
+    "student": "122",
     "assignment": "A302",
     "grade": "96"
   },
@@ -187,7 +181,7 @@
   },
   {
     "_id": "32",
-    "student": "124",
+    "student": "122",
     "assignment": "A303",
     "grade": "97"
   }

@@ -4,15 +4,7 @@ function Home() {
         <div className="d-flex flex-row">
             <ModuleList />
             <div className="flex-grow-0 me-2 d-none d-lg-block jj-courses-home-sidebar">
-            <b>Course Status</b>
             <ul>
-                <li>
-                    <div className="jj-publish-options">
-                        <button className="jj-grey-btn"><i className="fa-solid fa-ban"></i> Unpublish</button>
-                        <button className="jj-green-btn"><i className="fa-solid fa-circle-check"></i>
-                            Published</button>
-                    </div>
-                </li>
                 <li><button className="jj-wide-grey-btn"><i className="fa-solid fa-file-import"></i> Import Existing
                         Content</button></li>
                 <li><button className="jj-wide-grey-btn"><i className="fa-solid fa-arrows-turn-right"></i> Import From

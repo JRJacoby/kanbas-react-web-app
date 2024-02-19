@@ -53,7 +53,7 @@ function Grades() {
                             es.map(e => {
                                 return (
                                     <tr>
-                                        <td className="text-start">{e.user}</td>
+                                        <td className="text-start">{users.find(u => u._id === e.user)?.firstName} {users.find(u => u._id === e.user)?.lastName}</td>
                                         {
                                             as.map(a => {
                                                 return (
