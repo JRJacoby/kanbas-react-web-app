@@ -1,8 +1,8 @@
-function Assignment3() {
+function Assignment4() {
     return (
         <div className="container">
             <h1>Assignment 4</h1>
         </div>
     )
 }
-export default Assignment3;
+export default Assignment4;
