@@ -11,3 +11,19 @@
     color: navy;
     font-weight: bold;
 }
+
+.btn {
+    margin-right: 10px;
+}
+
+.jj-delete-btn {
+    background-color: crimson;
+}
+
+.jj-new-course-form {
+    width: 33%;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}

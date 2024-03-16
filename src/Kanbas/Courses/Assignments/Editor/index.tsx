@@ -1,9 +1,9 @@
 import "./index.css";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import { assignments } from "../../../Database";
+import db from "../../../Database";
 function AssignmentEditor() {
     const { assignmentId } = useParams();
-    const assignment = assignments.find(assignment => assignment._id === assignmentId);
+    const assignment = db.assignments.find(assignment => assignment._id === assignmentId);
     const { courseId } = useParams();
     const navigate = useNavigate();
     const handleSave = () => {

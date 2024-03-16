@@ -1,4 +1,3 @@
-import { courses } from "../../Kanbas/Database";
 import { Routes, useParams, Navigate, Route } from "react-router-dom";
 import { HiMiniBars3 } from "react-icons/hi2";
 import CourseNavigation from "./Navigation";
@@ -9,7 +8,8 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/Editor";
 import Grades from "./Grades";
-function Courses() {
+// TODO: Should I be replacing these examples 'anys' with something more specific?
+function Courses({ courses }: { courses: any[] }) {
     const { courseId } = useParams();
     const course = courses.find(course => course._id === courseId);
     return (

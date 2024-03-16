@@ -1,9 +1,9 @@
 import { useParams, Link } from "react-router-dom";
-import { assignments } from "../../Database/"
+import db from "../../Database/"
 import "./index.css";
 function Assignments() {
     const { courseId } = useParams();
-    const assignmentList = assignments.filter(assignment => assignment.course === courseId);
+    const assignmentList = db.assignments.filter(assignment => assignment.course === courseId);
 
     return (
         <div className="jj-assignments-main-content">

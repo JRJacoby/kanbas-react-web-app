@@ -1,15 +1,16 @@
 import { FaBars } from 'react-icons/fa';
 import { useLocation } from 'react-router';
 import "./index.css";
-import { courses } from "../../Database";
+import db from "../../Database";
 import { Link } from 'react-router-dom';
 
+// TODO: For long IDs like the auto-generated dates for the new courses, the breadcrumb just collapses to '..'. See if there's a way to avoid this.
 function Breadcrumbs() {
     const { pathname } = useLocation();
     const courseID = pathname.split("/")[3];
     const pageNames = pathname.split("/").slice(4);
     console.log(courseID);
-    const course = courses.find(course => course._id === courseID);
+    const course = db.courses.find(course => course._id === courseID);
 
     console.log(useLocation());
     return (

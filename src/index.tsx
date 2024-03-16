@@ -1,4 +1,3 @@
-// TODO: 1. For Lab 2.2.6.1, should there be the folder 'functions' or 'WorkingWithFunctions'?
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';

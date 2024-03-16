@@ -1,10 +1,10 @@
 import "./index.css";
 import { useParams } from "react-router-dom";
-import { assignments, enrollments, grades, users } from "../../../Kanbas/Database";
+import db from "../../../Kanbas/Database";
 function Grades() {
     const { courseId } = useParams();
-    const as = assignments.filter(a => a.course === courseId);
-    const es = enrollments.filter(e => e.course === courseId);
+    const as = db.assignments.filter(a => a.course === courseId);
+    const es = db.enrollments.filter(e => e.course === courseId);
 
     return (
         <div>
@@ -53,11 +53,11 @@ function Grades() {
                             es.map(e => {
                                 return (
                                     <tr>
-                                        <td className="text-start">{users.find(u => u._id === e.user)?.firstName} {users.find(u => u._id === e.user)?.lastName}</td>
+                                        <td className="text-start">{db.users.find(u => u._id === e.user)?.firstName} {db.users.find(u => u._id === e.user)?.lastName}</td>
                                         {
                                             as.map(a => {
                                                 return (
-                                                    <td>{grades.find(g => g.assignment === a._id && g.student === e.user)?.grade}</td>
+                                                    <td>{db.grades.find(g => g.assignment === a._id && g.student === e.user)?.grade}</td>
                                                 )
                                             })
                                         }
