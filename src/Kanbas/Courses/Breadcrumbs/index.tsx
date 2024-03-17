@@ -9,10 +9,8 @@ function Breadcrumbs() {
     const { pathname } = useLocation();
     const courseID = pathname.split("/")[3];
     const pageNames = pathname.split("/").slice(4);
-    console.log(courseID);
     const course = db.courses.find(course => course._id === courseID);
 
-    console.log(useLocation());
     return (
         <div className="jj-assignments-breadcrumbs-bar align-items-center">
             <FaBars className="jj-breadcrumbs-bar-icon"/>
@@ -23,8 +21,8 @@ function Breadcrumbs() {
                             {course?.number}.{course?._id}.{course?.startDate}
                         </Link>
                     </li>
-                    {pageNames.slice(0, -1).map(pageName => (
-                        <li className="breadcrumb-item">
+                    {pageNames.slice(0, -1).map((pageName, index) => (
+                        <li key={index} className="breadcrumb-item">
                             <Link className="jj-breadcrumb-link" to={`/Kanbas/Courses/${courseID}/${pageName}`}>
                                 {pageName}
                             </Link>

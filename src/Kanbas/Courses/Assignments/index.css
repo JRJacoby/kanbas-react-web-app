@@ -116,3 +116,12 @@
     padding-top: 13px !important;
     padding-bottom: 13px !important;
 }
+
+.jj-delete-assn-btn {
+    background-color: crimson;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    border-radius: 3px;
+}

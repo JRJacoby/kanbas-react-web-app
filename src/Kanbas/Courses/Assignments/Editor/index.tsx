@@ -1,12 +1,29 @@
 import "./index.css";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import db from "../../../Database";
+import { useSelector, useDispatch } from "react-redux";
+import {
+    addAssignment,
+    deleteAssignment,
+    updateAssignment,
+    selectAssignment
+} from "../assignmentsReducer";
+import { KanbasState } from "../../../store";
+
 function AssignmentEditor() {
     const { assignmentId } = useParams();
-    const assignment = db.assignments.find(assignment => assignment._id === assignmentId);
+    const assignment = useSelector((state: KanbasState) => state.assignmentsReducer.assignment);
+    const assignmentList = useSelector((state: KanbasState) => state.assignmentsReducer.assignments);
     const { courseId } = useParams();
     const navigate = useNavigate();
+    const dispatch = useDispatch();
     const handleSave = () => {
+        if (assignmentId === "NewAssignment") {
+            dispatch(addAssignment({ ...assignment, course: courseId }));
+        }
+        else {
+            dispatch(updateAssignment(assignment));
+        }
         navigate(`/Kanbas/Courses/${courseId}/Assignments`)
     }
 
@@ -21,7 +38,27 @@ function AssignmentEditor() {
             <form className="container">
                 <div className="mb-3">
                     <label htmlFor="assignment-name" className="form-label">Assignment Name</label>
-                    <input name="assignment-name" value={assignment?.title} id="assignment-name" className=" mb-3 form-control"></input>
+                    <input onChange={(e) => dispatch(selectAssignment({ ...assignment, title: e.target.value }))} name="assignment-name" value={assignment?.title} id="assignment-name" className=" mb-3 form-control"></input>
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="assignment-description" className="form-label">Assignment Description</label>
+                    <textarea onChange={(e) => dispatch(selectAssignment({ ...assignment, description: e.target.value }))} name="assignment-description" value={assignment?.description} id="assignment-description" className=" mb-3 form-control"></textarea>
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="points" className="form-label">Points</label>
+                    <input onChange={(e) => dispatch(selectAssignment({ ...assignment, points: e.target.value }))} name="points" value={assignment?.points} id="points" className=" mb-3 form-control"></input>
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="dueDate" className="form-label">Due Date</label>
+                    <input onChange={(e) => dispatch(selectAssignment({ ...assignment, dueDate: e.target.value }))} type="date" name="dueDate" value={assignment?.dueDate} id="dueDate" className="mb-3 form-control"></input>
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="availableFromDate" className="form-label">Available From</label>
+                    <input onChange={(e) => dispatch(selectAssignment({ ...assignment, availableFromDate: e.target.value }))} type="date" name="availableFromDate" value={assignment?.dueDate} id="availableFromDate" className="mb-3 form-control"></input>
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="availableUntilDate" className="form-label">Available Until</label>
+                    <input onChange={(e) => dispatch(selectAssignment({ ...assignment, availableUntilDate: e.target.value }))} type="date" name="availableUntilDate" value={assignment?.dueDate} id="availableUntilDate" className="mb-3 form-control"></input>
                 </div>
                 <hr />
                 <div className="d-flex justify-content-between">
@@ -32,9 +69,12 @@ function AssignmentEditor() {
                             name="final-grade-checkbox"></input>
                     </div>
                     <div>
-                        <button className="jj-grey-btn">Cancel</button>
-                        <button type="submit" className="jj-red-btn" onClick={handleSave}>
-                            <Link to={`/Kanbas/Courses/${courseId}/Assignments`}>Save</Link>
+                        <button className="jj-grey-btn"><Link to={`/Kanbas/Courses/${courseId}/Assignments`}>Cancel</Link></button>
+                        <button type="submit" className="jj-red-btn" onClick={(e) => {
+                            e.preventDefault();
+                            handleSave();
+                            }}>
+                            Save
                         </button>
                     </div>
                 </div>
