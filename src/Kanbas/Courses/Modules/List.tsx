@@ -79,19 +79,21 @@ function ModuleList() {
                                     </span>
                                 </div>
                                 {selectedModule._id === module._id && (
-                                    <ul className="list-group">
-                                        {module.lessons.map((lesson: Lesson) => {
-                                            return (
-                                                <li key={lesson._id} className="list-group-item">
-                                                    <FaGripVertical className="jj-list-grip" />{lesson.name}
-                                                    <span className="float-end">
-                                                        <FaCheckCircle className="text-success" />
-                                                        <FaEllipsisV />
-                                                    </span>
-                                                </li>
-                                            )
-                                        })}
-                                    </ul>
+                                    module.lessons?.length > 0 && (
+                                        <ul className="list-group">
+                                            {module.lessons.map((lesson: Lesson) => {
+                                                return (
+                                                    <li key={lesson._id} className="list-group-item">
+                                                        <FaGripVertical className="jj-list-grip" />{lesson.name}
+                                                        <span className="float-end">
+                                                            <FaCheckCircle className="text-success" />
+                                                            <FaEllipsisV />
+                                                        </span>
+                                                    </li>
+                                                )
+                                            })}
+                                        </ul>
+                                    )
                                 )}
                             </li>
                         )
