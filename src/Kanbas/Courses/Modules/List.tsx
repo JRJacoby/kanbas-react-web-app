@@ -48,8 +48,8 @@ function ModuleList() {
             </div>
             <hr />
             <form>
-                <button className="jj-red-btn" onClick={() => { dispatch(addModule({ ...newModule, course: courseId })) }}>Add</button>
-                <button className="jj-grey-btn" onClick={() => { dispatch(updateModule(newModule)) }}>Update</button>
+                <button className="jj-red-btn" onClick={(e) => {e.preventDefault(); dispatch(addModule({ ...newModule, course: courseId })) }}>Add</button>
+                <button className="jj-grey-btn" onClick={(e) => {e.preventDefault(); dispatch(updateModule(newModule)) }}>Update</button>
                 <div className="form-group">
                     <label htmlFor="new-module-name">New Module Name</label>
                     <input id="new-module-name" className="form-control" value={newModule.name} onChange={(e) => dispatch(setNewModule({ ...newModule, name: e.target.value }))} />
