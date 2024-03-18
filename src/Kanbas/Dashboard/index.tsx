@@ -40,10 +40,10 @@ function Dashboard(
                     <input value={course.image} id="course-thumbnail" className="form-control"
                         onChange={(e) => setCourse({ ...course, image: e.target.value })} />
                 </div>
-                <button onClick={addNewCourse} className='jj-grey-btn'>
+                <button onClick={(e) => {e.preventDefault(); addNewCourse }} className='jj-grey-btn'>
                     Add
                 </button>
-                <button onClick={updateCourse} className='jj-grey-btn'>
+                <button onClick={(e) => {e.preventDefault(); updateCourse }} className='jj-grey-btn'>
                     Update
                 </button>
             </form>
